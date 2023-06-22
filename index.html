@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Temperature Converter</title>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div class="textbox">
+      <h1>Temperature Converter</h1>
+      <p>
+        Masukkan suhu derajat Celsius (°C) ke kotak dibawah, lalu klik tombol
+        Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (°F)
+      </p>
+      <p>Celcius (°C):</p>
+      <textarea
+        name="Celcius"
+        id="inputCelcius"
+        type="number"
+        placeholder="Celcius"
+        cols="50"
+        rows="8"
+        onkeypress="return onlyNumberKey(event)"
+      ></textarea>
+      <br />
+      <button class="btn Konversi" onclick="btnClick()">Konversi</button>
+      <button class="btn Reset" onclick="resetInput()">Reset</button>
+      <button class="btn Reverse">Reverse</button>
+      <p>Fahrenheit (°F):</p>
+      <textarea
+        name="Fahrenheit"
+        id="outputTextarea"
+        cols="50"
+        rows="8"
+        onkeypress="return onlyNumberKey(event)"
+      ></textarea>
+      <p>Cara Kalkulasi:</p>
+      <textarea
+        name="Kalkulasi"
+        id="kalkulasiTextarea"
+        cols="50"
+        rows="8"
+        onkeypress="return onlyNumberKey(event)"
+      ></textarea>
+    </div>
+  </body>
+</html>
